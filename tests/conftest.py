@@ -94,6 +94,7 @@ def _build_positions(
     pinky_up: bool,
 ) -> list[tuple[float, float, float]]:
     """Assemble all 21 landmark positions."""
+
     def pick(x: float, up: bool) -> list[tuple[float, float, float]]:
         return _finger_up(x) if up else _finger_down(x)
 
